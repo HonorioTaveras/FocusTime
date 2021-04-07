@@ -7,9 +7,9 @@ export const RoundedButton = ({
   size = 125,
   ...props
 }) => {
-  const { title } = props;
+  const { title, onPress } = props;
   return (
-    <TouchableOpacity style={[styles(size).radius, style]}>
+    <TouchableOpacity style={[styles(size).radius, style]} onPress={onPress}>
       <Text style={[styles(size).text, textStyle]}>{title}</Text>
     </TouchableOpacity>
   );
