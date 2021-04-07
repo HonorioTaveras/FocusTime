@@ -3,7 +3,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import { TextInput } from 'react-native-paper';
 import { RoundedButton } from '../../Components/RoundedButton';
 
-export const Focus = () => {
+export const Focus = ({ addSubject }) => {
   const { container, titleContainer, title, inputContainer } = styles;
 
   return (
@@ -36,5 +36,6 @@ const styles = StyleSheet.create({
   inputContainer: {
     paddingTop: 20,
     flexDirection: 'row',
+    alignItems: 'center',
   },
 });
