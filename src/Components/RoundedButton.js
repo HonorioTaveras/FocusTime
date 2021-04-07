@@ -10,21 +10,24 @@ export const RoundedButton = ({
   const { title } = props;
   return (
     <TouchableOpacity style={[styles(size).radius, style]}>
-      <Text style={[styles.text, textStyle]}>{title}</Text>
+      <Text style={[styles(size).text, textStyle]}>{title}</Text>
     </TouchableOpacity>
   );
 };
 
-const styles = (style) =>
+const styles = (size) =>
   StyleSheet.create({
     radius: {
       borderRadius: size / 2,
       width: size,
       height: size,
       alignItems: 'center',
+      justifyContent: 'center',
+      borderColor: '#fff',
+      borderWidth: 2,
     },
     text: {
       color: '#fff',
-      fontSize: 20,
+      fontSize: size / 3,
     },
   });

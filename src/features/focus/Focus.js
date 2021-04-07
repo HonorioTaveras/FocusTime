@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { TextInput } from 'react-native-paper';
+import { RoundedButton } from '../../Components/RoundedButton';
 
 export const Focus = () => {
   const { container, titleContainer, title, inputContainer } = styles;
@@ -11,6 +12,7 @@ export const Focus = () => {
         <Text style={title}>What would you like to focus on?</Text>
         <View style={inputContainer}>
           <TextInput />
+          <RoundedButton title="+" />
         </View>
       </View>
     </View>
